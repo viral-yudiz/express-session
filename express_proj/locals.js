@@ -1,6 +1,6 @@
 const locals = (app) => {
-    app.locals.fname = "shivam";
-    app.locals.lname = "mishra";
+    app.locals.fname = "Viral";
+    app.locals.lname = "Barot";
 }
 
 module.exports = locals;

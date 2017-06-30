@@ -92,19 +92,19 @@ const config = (app) => {
 
     app.set('views', path.join(__dirname, '/views'));
 
-    app.set('view engine', 'ejs');
-    app.engine('shiva', require('ejs').renderFile);
+    //app.set('view engine', 'ejs');
+    // app.engine('shiva', require('ejs').renderFile);
 
     //app.set('view engine', 'pug');
     //app.engine('html', pug.__express);
 
-    //var hbs = exphbs.create({});
-    //app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
+    var hbs = exphbs.create({});
+    app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
     //app.engine('html', hbs.engine);
-    //app.set('view engine', 'handlebars');
+    app.set('view engine', 'handlebars');
 
     app.get('/', (req, res) => {
-        res.render('index', { "name": "shivam" });
+        res.render('index', { "name": "viral" });
     });
 
     // app.use(express.static(__dirname + '/public'));
