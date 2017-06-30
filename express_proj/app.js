@@ -9,5 +9,5 @@ console.log("PORT", app.get('PORT'));
 console.log("LOCALS", app.locals.fname);
 
 app.listen(PORT, () => {
-    console.log(`Magic of express on PORT ${PORT}`);
+    console.log(`Server Started @ http://localhost:${PORT}`);
 });
